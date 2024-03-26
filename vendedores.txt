@@ -1,0 +1,10 @@
+CC;1000;Nombre0;Apellido0
+CC;1001;Nombre1;Apellido1
+CC;1002;Nombre2;Apellido2
+CC;1003;Nombre3;Apellido3
+CC;1004;Nombre4;Apellido4
+CC;1005;Nombre5;Apellido5
+CC;1006;Nombre6;Apellido6
+CC;1007;Nombre7;Apellido7
+CC;1008;Nombre8;Apellido8
+CC;1009;Nombre9;Apellido9

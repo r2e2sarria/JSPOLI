@@ -1,0 +1,15 @@
+0;Producto0;444
+1;Producto1;479
+2;Producto2;576
+3;Producto3;740
+4;Producto4;940
+5;Producto5;612
+6;Producto6;927
+7;Producto7;155
+8;Producto8;449
+9;Producto9;1047
+10;Producto10;215
+11;Producto11;341
+12;Producto12;1063
+13;Producto13;1038
+14;Producto14;966
