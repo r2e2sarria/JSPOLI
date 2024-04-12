@@ -2,19 +2,36 @@ package SEM3;
 
 import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
+
+
+/**
+ * This class is used to generate sample data files for sellers and products.
+ * It creates two files, "vendedores.txt" for sellers and "productos.txt" for products,
+ * with generated sample data.
+ *
+ * CONCEPTOS FUNDAMENTALES DE PROGRAMACIÓN-[GRUPO B01]/SG 11
+ * @author CRISTIAN STIVEN BERMUDEZ PEÑA
+ * @author SERGIO DAVID BONZA RODRIGUEZ
+ * @author Cardona Ospina Diana Patricia
+ * @author JORGE ARTURO SARRIA COBO
+ * @author MANUELA TARAZONA ECHEVERRI
+ */
+
 
 public class Main {
     private static final String[] VENDEDORES = {
         "CC;12345;Juan Pérez;Pérez",
         "CC;12346;María López;López",
-        "CC;12347;Carlos Gómez;Gómez"
+        "CC;12347;Carlos Gómez;Gómez",
+        "CC;12347;Juana Castro;Castro"
+
     };
 
     private static final String[] PRODUCTOS = {
         "1;Laptop;1500",
         "2;Smartphone;800",
-        "3;Tablet;600"
+        "3;Tablet;600",
+        "3;DeskTop;1200"
     };
 
     public static void main(String[] args) {
