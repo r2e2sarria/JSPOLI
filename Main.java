@@ -1,4 +1,4 @@
-package SEM3;
+package SEM7;
 
 import java.io.*;
 import java.util.*;
@@ -10,7 +10,6 @@ import java.util.*;
  * Main class for processing sales and generating reports.
  * It reads data from "vendedores.txt" and "productos.txt", simulates sales,
  * and generates sales reports "reporteVendedores.csv" and "reporteProductos.csv".
- *
  *
  * CONCEPTOS FUNDAMENTALES DE PROGRAMACIÓN-[GRUPO B01]/SG 11
  * @author CRISTIAN STIVEN BERMUDEZ PEÑA

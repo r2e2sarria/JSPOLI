@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * WEEK 7
  * 
  * The GenerateInfoFiles class is responsible for creating text files
  * based on predefined arrays of sellers and products.
@@ -18,7 +17,7 @@ import java.util.Random;
  * @author JORGE ARTURO SARRIA COBO
  * @author MANUELA TARAZONA ECHEVERRI
  */
-public class GenerateInfoFiles {
+public class GenerateInfoFiles3 {
 
     /**
      * Generates a file with seller information.

@@ -1,3 +1,4 @@
+package SEM7;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -5,7 +6,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
-* This class is responsible for generating initial data files for sellers and products.
+ * WEEK 7
+ * 
+ * This class is responsible for generating initial data files for sellers and products.
  * It creates "vendedores.txt" for sellers and "productos.txt" for products with predefined data.
  *
  *
