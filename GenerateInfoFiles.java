@@ -3,12 +3,12 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Random;
 
 /**
- * The GenerateInfoFiles2 class is responsible for creating text files
- * based on predefined arrays of sellers and products.
- * 
+* This class is responsible for generating initial data files for sellers and products.
+ * It creates "vendedores.txt" for sellers and "productos.txt" for products with predefined data.
+ *
+ *
  * CONCEPTOS FUNDAMENTALES DE PROGRAMACIÓN-[GRUPO B01]/SG 11
  * @author CRISTIAN STIVEN BERMUDEZ PEÑA
  * @author SERGIO DAVID BONZA RODRIGUEZ
@@ -18,53 +18,66 @@ import java.util.Random;
  */
 public class GenerateInfoFiles {
 
+    // Array of predefined seller information
+    private static String[] vendedores = {
+        "CC;12345;Juan Pérez;Pérez",
+        "CC;12346;María López;López",
+        "CC;12347;Carlos Gómez;Gómez"
+        // More sellers can be added here as necessary
+    };
+
+    // Array of predefined product information
+    private static String[] productos = {
+        "1;Laptop;1500",
+        "2;Smartphone;800",
+        "3;Tablet;600"
+        // More products can be added here as necessary
+    };
+
     /**
-     * Generates a file with seller information.
-     * Each seller is assigned a sequential ID and a generic name and surname.
+     * Writes the predefined seller information from the 'vendedores' array
+     * to a text file named 'vendedores.txt'.
      * 
-     * @param numberOfSalesmen The number of salesmen to generate in the file.
-     * @throws IOException If an I/O error occurs writing to or creating the file.
+     * @throws IOException If there is an issue writing to the file.
      */
-    private static void createSalesMenFile(int numberOfSalesmen) throws IOException {
+    private static void createSalesMenFile() throws IOException {
         File file = new File("vendedores.txt");
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
-        for (int i = 0; i < numberOfSalesmen; i++) {
-            writer.write("CC;" + (1000 + i) + ";Nombre" + i + ";Apellido" + i + "\n");
+        for (String vendedor : vendedores) {
+            writer.write(vendedor + "\n");
         }
 
         writer.close();
     }
 
     /**
-     * Generates a file with product information.
-     * Each product is assigned a unique ID, a generic name, and a random price.
+     * Writes the predefined product information from the 'productos' array
+     * to a text file named 'productos.txt'.
      * 
-     * @param numberOfProducts The number of products to generate in the file.
-     * @throws IOException If an I/O error occurs writing to or creating the file.
+     * @throws IOException If there is an issue writing to the file.
      */
-    private static void createProductsFile(int numberOfProducts) throws IOException {
+    private static void createProductsFile() throws IOException {
         File file = new File("productos.txt");
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-        Random random = new Random();
 
-        for (int i = 0; i < numberOfProducts; i++) {
-            writer.write(i + ";Producto" + i + ";" + (random.nextInt(1000) + 100) + "\n");
+        for (String producto : productos) {
+            writer.write(producto + "\n");
         }
 
         writer.close();
     }
 
     /**
-     * The main method that drives the file generation process.
-     * It calls methods to generate sample files for sellers and products.
+     * The main method that calls the functions to create the seller and product files.
+     * It handles any IOExceptions thrown by the file creation methods.
      * 
      * @param args Command-line arguments (not used).
      */
     public static void main(String[] args) {
         try {
-            createSalesMenFile(10); // Generate 10 test sellers
-            createProductsFile(15); // Generate 15 test products
+            createSalesMenFile();
+            createProductsFile();
             System.out.println("Files generated successfully.");
         } catch (IOException e) {
             System.err.println("Error generating the files: " + e.getMessage());
